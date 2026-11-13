@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark is the default */
+:root {
+  --accent: #06b6d4;
+  --bg: #0b0b0e;
+  --surface: #131318;
+  --text: #f4f4f5;
+  --muted: #a1a1aa;
+  --line: #26262d;
+}
+
+:root[data-mode="light"] {
+  --bg: #fbfaff;
+  --surface: #ffffff;
+  --text: #25233a;
+  --muted: #6e6c85;
+  --line: #e8e5f5;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.3s, color 0.3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
