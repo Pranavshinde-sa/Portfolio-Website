@@ -265,7 +265,7 @@ export default function App() {
     <>
       {/* Top bar */}
       <header className="sticky top-0 z-20 border-b border-line bg-bg/80 backdrop-blur-md">
-        <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
+        <div className="mx-auto flex h-16 max-w-[1400px] items-center justify-between px-6 lg:px-12">
           <a href="#top" className="font-display text-lg font-bold tracking-tight">
             pranav<span className="text-accent">.</span>
           </a>
@@ -298,7 +298,7 @@ export default function App() {
         </div>
       </header>
 
-      <main id="top" className="mx-auto max-w-5xl px-6">
+      <main id="top" className="mx-auto max-w-[1400px] px-6 lg:px-12">
         {/* Hero */}
         <section className="relative overflow-hidden py-16 sm:py-24">
           <div
